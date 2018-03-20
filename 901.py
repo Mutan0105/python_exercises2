@@ -5,7 +5,7 @@ for eachline in f:
     if eachline.startswith('#'):
         continue
     elif '#' in eachline:
-        loc = eachline.find('##')
+        loc = eachline.find('#')
         print eachline[:loc]
     else:
         print eachline
