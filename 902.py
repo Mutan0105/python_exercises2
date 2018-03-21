@@ -6,8 +6,9 @@ line = int(raw_input('您要读取几行：'))
 
 if os.path.exists(filename):
     f = open(filename,'r')
-    lines = f.readline()[2]
-    print lines
+    lines = f.readlines()
+    for i in range(line):
+        print lines[i]
     f.close()
 else:
     print '文件不存在'
