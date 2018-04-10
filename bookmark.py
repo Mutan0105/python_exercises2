@@ -22,6 +22,5 @@ def addmark():
 
 def modify():
     which_one = raw_input('输入需要修改的条目：')
-    
 
-if __name__ == '__main__'
+
